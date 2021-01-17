@@ -26,12 +26,12 @@ def get_filters():
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month=input("enter the month all, january, february, ... , june \n").lower()
-    while (month not in month_list):
+    while month not in month_list:
         month=input("enter a good value of month \n").lower()
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day=input("enter the day all, monday, tuesday, ... sunday \n").lower()
-    while (day not in day_list):
+    while day not in day_list:
         day=input("enter a good value of day \n").lower()
 
     print('-'*40)
@@ -179,7 +179,6 @@ def user_stats(df):
 
     # TO DO: Display earliest, most recent, and most common year of birth
 
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -207,7 +206,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        restart = input('\nWould you like to restart? Enter yes or no. \n')
         if restart.lower() != 'yes':
             break
 
