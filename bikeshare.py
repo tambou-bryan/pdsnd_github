@@ -179,7 +179,6 @@ def user_stats(df):
 
     # TO DO: Display earliest, most recent, and most common year of birth
 
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
     
