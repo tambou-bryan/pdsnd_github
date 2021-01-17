@@ -22,7 +22,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city =input("enter the city \n").lower()
     while city not in city_list:
-        city=input("enter a good value of city chicago, new york city or washington \n")
+        city=input("enter a good value of city chicago, new york city or washington \n").lower()
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month=input("enter the month all, january, february, ... , june \n").lower()
@@ -182,6 +182,8 @@ def user_stats(df):
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
+    # TO DO: Display line of brut data (5 lines to 5)
     
 def display_raw_data(df):
     i=input("You want to see 5 lines of raw data ? yes/no: ").lower()
